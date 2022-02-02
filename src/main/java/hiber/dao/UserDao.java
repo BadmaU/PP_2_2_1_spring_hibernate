@@ -9,5 +9,5 @@ public interface UserDao {
    void add(User user);
    void add(Car userCar);
    List<User> listUsers();
-   List<User> listUsersWithCars(Car userCar);
+   User listUserWithCars(Car userCar);
 }

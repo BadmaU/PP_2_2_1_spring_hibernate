@@ -7,7 +7,6 @@ import javax.persistence.*;
 @Table(name = "cars")
 public class Car {
 
-    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
@@ -15,6 +14,8 @@ public class Car {
     @Column(name = "model")
     private String model;
 
+    @Id
+    @PrimaryKeyJoinColumn
     @Column(name = "series")
     private int series;
 
